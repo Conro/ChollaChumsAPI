@@ -1,0 +1,17 @@
+    post:
+      tags:
+        - Puppies
+      description: Creates a new puppy
+      produces:
+        - application/json
+      parameters:
+        - name: puppy
+          description: Puppy object
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Puppy'
+      responses:
+        200:
+          description: Successfully created
+ 
